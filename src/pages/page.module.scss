@@ -1,0 +1,10 @@
+
+@import '../../styles/scssGlobal/global.scss';
+
+.selectReact{ width: 158px; }
+
+.errorPageCont{ width: 100%; @include display(flex, center, center, wrap, column); padding: 32px 20px; }
+.errorPageCont aside{ margin: auto; text-align: center;}
+.errorPageCont h2{ font-size: 36px; }
+.errorPageCont h3{ font-size: 20px; padding: 0 0 52px 0;}
+.errorPageCont aside img{ margin-bottom: 20px; margin-left: 70px;}

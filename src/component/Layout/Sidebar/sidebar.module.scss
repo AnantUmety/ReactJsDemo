@@ -1,0 +1,101 @@
+@import '../../../../styles/scssGlobal/global.scss';
+// .sidebarCntr{ width: 80px; height: 80px; margin-top: auto;}
+.rightSideBar{ width: 280px; background: red; position: fixed; right: 10px; top: 90px;}
+
+
+.sidebarCntr [attr-data="logoCntr"] img{  filter: brightness(0) invert(1); }
+.sidebarCntr [attr-data="logoCntr"] { margin-top: 22px; margin-bottom: 25px; margin-left: 16px;}
+.sidebarCntr ul{ width: 100%; @include display(flex, flex-start, flex-start, unset, column); flex: 1; padding-bottom: 20px; overflow: auto; }
+.sidebarCntr ul li{ width: 100%; @include display(flex, center, center, unset, column); padding: 0 16px; margin: 0 0 10px 0; }
+.sidebarCntr ul li a{ padding: 0 0 0 36px;  @include display(flex, center, flex-start, wrap); width: 100%; @include position(relative); min-height: 30px; color: $primaryBase5; border-radius: 4px;}
+.sidebarCntr ul li a b{ width: 32px; height: 24px; @include display(flex, center, center, wrap); @include position(absolute, 1px, 2px, unset, unset, auto);}
+.sidebarCntr ul li a:hover{ background: $primaryBase1;}
+.sidebarCntr ul li a.active{ background: $primaryBase1}
+.sidebarCntr ul li a b img{ max-width: 82%;}
+.sidebarCntr ul li button{ padding: 0 15px 0 36px;  @include display(flex, center, flex-start, wrap); width: 100%; @include position(relative); min-height: 30px; color: $primaryBase5; border-radius: 4px;}
+.sidebarCntr ul li button b{ width: 32px; height: 24px; @include display(flex, center, center, wrap); @include position(absolute, 1px, 2px, unset, unset, auto);}
+
+.sidebarCntrOuter ul li a.activated{ background: $primaryBase1;}
+
+.sidebarCntr ul li.moveBottom{ margin-top: auto;}
+
+
+.sidebarCntr.fixed{ @include position(fixed, 0, 0); @include display(flex, stretch, flex-start, wrap); height: 100%; padding-top: 30px; padding-bottom: 20px; width: 62px; width: 100%; z-index: 1; transition: $transition3; }
+.sidebarCntr.fixed ul li a span{ opacity: 0;  min-width: 160px;  transform: translateX(-100%)  }
+.sidebarCntr.fixed:hover{ max-width: 220px;  }
+.sidebarCntr.fixed:hover span{ animation: slide-in 0.5s ease-in-out forwards;}
+.sidebarCntr ul li{ align-items: flex-start;}
+
+.sidebarCntr.fixed ul li button span{ opacity: 0;  min-width: 160px;  transform: translateX(-100%); text-align: left; font-size: 12px;  }
+.sidebarCntr ul li button b img{ max-width: 82%;}
+.sidebarCntr ul li button{ padding: 0px; margin-top: 15px;  @include display(flex, center, flex-start, wrap); width: 100%; @include position(relative); min-height: 30px; color: $primaryBase5; border-radius: 4px; }
+.sidebarCntr ul li button::after{ content: ""; @include position(absolute, 0, -10px);  background: $white02; height: 1px; width: 100%;}
+.sidebarCntr ul li button b{ width: 32px; height: 24px; @include display(flex, center, center, wrap); @include position(absolute, -1px, 2px, unset, unset, auto);}
+.sidebarCntr ul li button span{  opacity: 0;  transform: translateX(-100%); font-size: 14px; text-align: left; padding-right: 15px; display: block; }
+.sidebarCntr:hover ul li button span { animation: slide-in 0.5s ease-in-out forwards; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 37px; padding-right: 20px;}
+.sidebarCntr{ width: 100%;}
+.sidebarCntr ul li button em{@include position(absolute, unset, 3px, 0); background: url("../../../../public/images/navigation/signAro.png") no-repeat right center; height: 22px; width: 22px; opacity: 0;    transform: translateX(-100%);  }
+.sidebarCntr ul li button:hover em{ opacity: 1;}
+.sidebarCntr ul li:last-child{ height: 40px;}
+
+.sidebarCntrOuter:hover ul li button em{ opacity: 1;  animation: slide-in 0.5s ease-in-out forwards; }
+
+.sidebarCntrOuter{ max-width: 62px; overflow: hidden; transition: $transition3;  padding-bottom: 20px;}
+.sidebarCntrOuter:hover{ max-width: 220px;}
+
+.sidebarCntrOuter [attr-data="logoCntr"]{ max-width: 220px; opacity: 0; }
+.sidebarCntrOuter:hover [attr-data="logoCntr"]{ opacity: 1;}
+.sidebarCntrOuter ul li a span { opacity: 0;  min-width: 160px;  transform: translateX(-100%) }
+.sidebarCntrOuter:hover ul li a span { animation: slide-in 0.5s ease-in-out forwards; }
+.sidebarCntrOuter hgroup{ height: 64px; width: 204px; }
+.sidebarCntrOuter hgroup [attr-data="logoCntr"]{ opacity: 0;  transform: translateX(-100%); margin-bottom: 10px; }
+.sidebarCntrOuter:hover hgroup [attr-data="logoCntr"]{animation: slide-in2 0.5s ease-in-out forwards;}
+.sidebarCntrOuter ul li { width: 100%; }
+.sideLeft{ width: 62px; height: 100%; transition: $transition3;}
+.sideLeft.isHover{ width: 250px; }
+  
+.sidebarCntr ul li.moveTop{ margin-top: auto;}
+
+.topHead, .bottomHead{ width: 100%; background: $primaryBase; height: 20px; @include position(fixed, 0, 0); z-index: 2; transition: $transition3;}
+.bottomHead{@include position(fixed, 0, unset, unset, 0)}
+.sidebarCntrOuter main{ @include position(fixed, 0, 0); max-width: 64px; height: 100vh; @include display(flex, flex-start, flex-start, unset, column); transition: $transition3; padding-bottom: 55px;}
+.sidebarCntrOuter:hover main{ max-width: 220px;}
+.sidebarCntrOuter:hover .topHead{ margin-left: 158px;}
+.sidebarCntrOuter:hover .bottomHead{ margin-left: 158px;}
+
+.topHead::before{ content: ""; @include position(absolute, 62px, 20px); background: url("../../../../public/images/global/shape.svg") no-repeat left top; width: 32px; height: 32px; transform: rotate(90deg);}
+.topHead::after{ content: ""; @include position(absolute, unset, 20px, 16px); background: url("../../../../public/images/global/shape.svg") no-repeat left top; width: 32px; height: 32px; transform: rotate(180deg);}
+
+.bottomHead::before{ content: ""; @include position(absolute, 62px, -32px); background: url("../../../../public/images/global/shape.svg") no-repeat left top; width: 32px; height: 32px; transform: rotate(0deg);}
+.bottomHead::after{ content: ""; @include position(absolute, unset, -32px, 16px); background: url("../../../../public/images/global/shape.svg") no-repeat left top; width: 32px; height: 32px; transform: rotate(270deg);}
+
+.blueBird{ background: $black80; max-width: 62px; overflow: hidden;}
+.darkBlue{@include position(fixed, 0, 0); z-index: 2; background: $black80; overflow: hidden; padding: 0px;}
+.darkBlue main{ position: initial; padding: 0px 0 30px 0px;}
+.darkBlue main ul{ padding: 0px;}
+.darkBlue main ul li button::after{ background: $primaryBase1;}
+
+
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  @keyframes slide-in2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

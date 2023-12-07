@@ -1,0 +1,50 @@
+
+@import '../../../styles/scssGlobal/global.scss';
+
+.inputFieldsFull { width: 100%; position: relative; }
+.inputFieldshalf { width: 48.5%; }
+.inputFieldsFull .labelGroup input{ background: none; width: 100%; height: 50px; border: 0px; padding: 12px 20px; font-size: 16px;  }
+.inputFieldsFull .labelGroup{ width: 100%; height: 50px; background: $blackBase15; font-size: 1rem; padding: 12px 20px; border-radius: 12px; border: 0px; position: relative; }
+.inputFieldsFull .labelGroup.focused label{ top: 2px; font-size: 0.75rem;}
+.inputFieldsFull .labelGroup.valueMove label{ top: 0px; font-size: 0.75rem;}
+.inputFieldsFull.erroeBoxTrue::after { content: ""; width: calc(100% - 40px); height: 2px; background: $red; @include display(flex, center, center); @include position(absolute, 20px) }
+.inputFieldsquarter {width: 24%;}
+.inputFieldsFull label{ width:auto; padding: 0 0 0px 0; display: flex; position: absolute; left: 20px; top: 17px; transition: $transition2;}
+.inputFieldsFull textarea{width: 100%; height: 108px; background: #fff; border: 1px solid #E5E1E6; font-size: 14px; line-height: 18px;padding: 12px 16px;color: #313034;border-radius: 12px; resize: none;     font-family: 'Poppins', sans-serif;}
+
+.inputFieldsFull label {font-size: 14px;width: auto; text-align: left; color: #5F5E62;}
+.inputFieldsFull label b {min-height: 20px; width: 100%; display: block;}
+.inputFieldsFull input::placeholder{color: #C9C5CA; opacity: 1;}
+.isPhoneClass { position: relative}
+.isPhoneClass cite {font-style: normal; font-size: 16px; line-height: 16px; color: #313034;position: absolute;left: 10px; top: 50px}
+
+.isPhoneClass input{ padding-left: 38px}
+.focusList input{border-color: #4B3DF3;}
+
+.inputFieldsFull main{ width: 100%; position:absolute; left: 0px; top:0px; display: block}
+.inputFieldsFull main em{ width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; position: absolute; right: 6px; top:3px; cursor: pointer;}
+.inputFieldsFull .emailValue input{ padding-left: 44px;}
+.inputFieldsFull .emailValue main em svg{ font-size: 27px; }
+.inputFieldsFull .emailValue label{ left: 43px; }
+.inputFieldsFull .emailValue em i{ font-size: 20px; font-style: normal;}
+
+
+.inputFieldsFull input{
+    // width: 100%;
+    // height: 50px;
+    // background: $darkBase;
+    // font-size: 1rem;
+    // padding: 12px 20px;
+    // color: $white04;
+    // border-radius: 6px;
+    // border: 0px;
+
+}
+
+.inputFieldsFull.borderDv > div{ background: $white; border: 1px solid $blackBase13;}
+
+/******rtl part start****/
+[dir="rtl"] .inputFieldsFull label{ left: initial; right: 20px;}
+[dir="rtl"] .inputFieldsFull main em{ left: 0px; right: initial;}
+/******rtl part end****/
+

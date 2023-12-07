@@ -1,0 +1,29 @@
+
+@import '../../../styles/scssGlobal/global.scss';
+.headerCntr{ width: 100%; @include display(flex, center, space-between); padding: 1.875rem 3rem; z-index: 3; position: relative; }
+.headerCntr.medium{ width: 1170px; margin: auto; padding-left: 0; padding-right: 0; }
+.headerCntr.absolute{ @include position(absolute, 0, 0, 0); width: 100%; padding-left: 48px; padding-right: 48px; }
+// .increaseFont{ width: auto;}
+// .incrFont{ color: #fff;}
+// .increaseFont button{ color: #fff; border: 1px solid #fff; padding: 3px 5px;}
+
+// .englishLang ul{ position: absolute; left: 0px; top:30px; background: $skyBlue; width: 100%; }
+// .englishLang ul li{ width: 100%; padding: 0px; border-bottom: 1px solid $jumbo;}
+// .englishLang ul li button{ padding: 5px;  width: 100%; text-align: left;}
+// .englishLang ul li:last-child{ border: 0px;}
+
+
+/******rtl part start****/
+[dir="rtl"] .loginBtnHead{ margin-left: 1rem; margin-right: auto; }
+/******rtl part end****/
+
+ @media screen and (max-width:1200px) {
+    .headerCntr.medium{ width: 100%; padding: 1.5rem; }
+    .loginLeft{ padding: 0px; }
+}
+
+@media screen and (max-width:900px) {
+    .headerCntr{ width: 100%; padding: 1.25rem; }
+}
+
+

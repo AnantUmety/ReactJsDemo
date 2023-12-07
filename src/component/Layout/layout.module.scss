@@ -1,0 +1,52 @@
+
+@import '../../../styles/scssGlobal/global.scss';
+
+.layoutCntr{ width: 100%; display: flex; flex-wrap: wrap; flex-direction: column;}
+.layoutCntrMiddle{ width: 100%; flex: 1; @include display(flex, stretch, flex-start)}
+
+.leftSidebar{ width: 100%; padding-left: 95px;}
+.leftSidebar [data-attr="sidebarCntr"]{ width: 80px; position: fixed; left: 0px; top:0px; height: 100vh;}
+.leftSidebar [data-attr="layoutCntrMiddle"]{ width: 100%; padding: 95px 15px 10px 0px; }
+.leftSidebar [data-attr="headerCntr"]{ width: calc(100% - 95px); position: fixed; top: 0px; right: 0px;}
+.leftSidebar [data-attr="footerCntr"]{ width: 100%; }
+
+.innerSidebarsRight [data-attr="layoutCntrMiddle"]{padding-right: 290px;}
+
+.innerSidebars{ width: 100%; flex-direction: row;}
+.innerSidebars [data-attr="headerCntr"]{ width: 100%; z-index: 1; position: fixed; right: 0px; top: 0px;}
+.innerSidebars [data-attr="layoutCntrMiddle"]{ width: calc(100% - 260px); margin-left: 246px; padding-top: 90px; padding-bottom: 20px;}
+.innerSidebars [data-attr="sidebarCntr"]{ position: fixed; left: 0px; top: 80px; width: 230px;}
+.innerSidebars [data-attr="layoutCntrMiddle"]{ flex: initial;}
+
+.leftSidebarMedium{ width: 100%; padding-left: 240px;}
+.leftSidebarMedium [data-attr="sidebarCntr"]{ width: 250px; min-height: 100%; @include display(flex, flex-start, center, wrap, column) }
+.leftSidebarMedium [data-attr="headerCntr"]{ width: calc(100% - 240px); z-index: 1; position: fixed; right: 0px; top: 0px;}
+.leftSidebarMedium [data-attr="layoutCntrMiddle"]{ width: calc(100% - 62px); padding-top: 90px; padding-bottom: 20px;}
+.cntrMain{ width: 100%; }
+
+.rightSideBar{ width: 100%;}
+.rightSideBar [data-attr="layoutCntrMiddle"]{padding-right: 300px;}
+
+.bgBlack{ background: $black80;}
+.verticalCenter{ @include display(flex, center, center) }
+.hideHeaderFooter{ padding: 50px 0;}
+
+.layoutCntr.blue{ background: $primaryBase; padding: 0px 16px 16px 0px; overflow: hidden; position: relative; }
+.layoutCntrMiddle.blue{ background: $white; border-radius: 0px; padding: 48px 48px 8px 48px;}
+
+.layoutCntr.darkBlue{ background: $primaryBase; padding: 0px; }
+.layoutCntrMiddle.darkBlue{ background: $white; border-radius: 0px; padding:  48px; width: calc(100% - 62px);}
+
+
+.layoutCntr.darkBlue ul{ padding-top: 20px;}
+.layoutCntr.darkBlue ul li a span{ display: none;}
+.layoutCntr.darkBlue [attr-data="logoCntr"]{ display: none;}
+
+.smallPaddingDv .layoutCntrMiddle { padding: 34px 16px 16px 16px; }
+
+.layoutCntr.blue [data-attr="footerCntr"]{ border: 0px; margin: 0px; position: relative; height: auto; padding: 24px 0 8px 48px;}
+.layoutCntr.blue [data-attr="footerCntr"] li a{ color: $white; }
+.layoutCntr.blue [data-attr="footerCntr"] li a:hover{ color: $primaryBase2 ;}
+.layoutCntr.blue [data-attr="footerCntr"] p { color: $primaryBase2}
+.layoutCntr.blue [data-attr="footerCntr"]::before{ content: ""; @include position(absolute, 0, -32px); background: url("../../../public/images/global/shape.svg") no-repeat left top; width: 32px; height: 32px; transform: rotate(0deg);}
+.layoutCntr.blue [data-attr="footerCntr"]::after{ content: ""; @include position(absolute, unset, -32px, 0); background: url("../../../public/images/global/shape.svg") no-repeat left top; width: 32px; height: 32px; transform: rotate(270deg);}

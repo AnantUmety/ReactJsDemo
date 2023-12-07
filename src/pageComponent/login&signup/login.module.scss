@@ -1,0 +1,51 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.loginCntr{ width: 466px; margin: 0 auto; }
+.loginCntr [attr-data="logoCntr"]{ text-align: center; margin-bottom: 32px; font-size: 32px;}
+.loginCntr ul{ width: 100%; padding: 36px 0 0 0;}
+.loginCntr ul li{width: 100%; @include display(flex, flex-start, unset, wrap); padding: 0 0 18px 0; }
+.loginCntr h4{ text-align: center; font-size: 14px; font-weight: 600;}
+.loginCntr h6{ text-align: center;}
+.iconsLogin{ width: 104px; height: 104px;  background: $blackBase16; border-radius: 32px; @include display(flex, center, center); margin: 0 auto;}
+.loginCntr h5{ text-align: center; font-size: 10px;}
+.loginCntr h5 a{ font-weight: 600; text-decoration: underline; color: $primaryBase; font-size: 14px; }
+.loginCntr h5 a:hover{ text-decoration: none;}
+.loginSchoolcntr, .loginUsercntr{ width: 100%; }
+.loginUsercntr h4{ font-weight: 400; text-align: center; @include display(flex, center, center); padding: 0 0 30px 0;}
+.loginUsercntr h4::after, .loginUsercntr h4::before{ content: ""; height: 1px; background: $blackBase4; flex: 1; opacity: 0.1;  }
+.loginUsercntr h4 span{ padding: 0 10px;}
+.gButton{ margin: 0 0 24px 0;}
+.gButton span{ font-weight: 400;}
+.gButton span b{ @include display(flex)}
+
+.btnLists{ width: 100%; display: flex; }
+.gBtns{ margin-left: 20px;}
+
+.iconsLogin hgroup{ font-size: 20px; line-height: 24px; @include display(flex, center, center);  flex-direction: column;}
+.iconsLogin hgroup a{ display: inline-flex; font-size: 14px;  color: $primaryBase6;}
+.titleList{ flex-direction: column;  width: 100%; height: auto; background: none; padding-bottom: 0px;}
+.titleList img{ margin-bottom: 5px;}
+
+.signStudent{ width: 100%; }
+.signStudent [attr-data="logoCntr"]{ margin: auto;}
+.signStudent li{ padding-bottom: 20px;}
+.tabList{ width: 100%; @include display(flex, center, center); margin-bottom: 24px; }
+.tabList li{ width: auto; flex: 1; padding: 0px;} 
+.tabList li button{ height: 50px; text-align: center; width: 100%; font-size: 14px;}
+.tabList li.activated button{ background: $blackBase8; color: $white;}
+
+.signupBox{ overflow: hidden;}
+.signupBox h5{ text-align: center; font-size: 14px; font-weight: 600; padding-top: 5px;}
+.signupBox h6{ text-align: center; padding-bottom: 30px;}
+.signupBox h4 {font-weight: 400; text-align: center; display: flex; align-items: center; justify-content: center; flex-wrap: unset; flex-direction: unset; padding: 10px 0 30px 0; font-size: 14px; }
+.signupBox h4::after, .signupBox h4::before { content: ""; height: 1px; background: #42526E; flex: 1 1; opacity: 0.1; }
+.signupBox h4 span { padding: 0 10px; }
+
+.signupBoxUp{ width: 100%; margin: -10px 0 0 0; }
+.signupBoxUp [attr-data="logoCntr"]{ width: 213px; margin: auto auto 32px auto;}
+.loginContent{ width: 100%; padding: 0 60px; }
+
+.signBtn{ margin-top: 10px; } 
+
+.checkBx{ margin-top: 4px; margin-bottom: 18px;}
+.checkBx .checkboxHeading{ font-size: 12px;}

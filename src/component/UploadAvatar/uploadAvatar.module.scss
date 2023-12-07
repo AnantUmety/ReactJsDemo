@@ -1,0 +1,31 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.fileUploadCntr { @include display(flex, flex-start, flex-start, wrap); margin: 0 0 16px 0;  }
+.fileUploadCntr h5{ color: $blackBase8; font-size: 14px; margin: 12px 0 0 0; padding: 0px; opacity: 0.7; font-weight: 300; width: 100%; }
+.cstmFileUpload span{ background: $primaryBase; color: $white; height: 36px; border-radius: 8px; margin: 0 0 0px 0; font-weight: 600; padding: 0 20px; height: 36px; @include display(flex, center, center);}
+.cstmFileUpload span:hover{ background: $primaryBase; color: $white;}
+
+.cstmFileUpload { @include display(flex, center, flex-start);  border: none; cursor: pointer;}
+.cstmFileUpload input[type="file"] {display: none;}
+.uploadImage{ width: 100%; @include display(flex, center, flex-start); margin: 0 0 24px 0; }
+.uploadSmplDv {@include display(flex, center, flex-start); width: 100%; margin-right: 11px; margin-bottom: 24px;}
+.uploadSmplDv h1{ font-size: 28px; line-height: 32px; } 
+.uploadSmplDv h1 span{ display: block; font-size: 12px; line-height: 16px; color: $blackBase6; margin-top: 4px}
+.uploadSmplDv hgroup{@include display(flex, center, center); width: 112px; height: 112px;  border-radius: 50%; margin-right: 16px; overflow: hidden;}
+// .uploadSmplDvAct{ background: $blackBase14; padding: 10px; pointer-events: none;}
+.uploadSmplDvAct img{ max-height: initial;}
+  
+.cropImageDiv{ width: 100%; @include display(flex, center, flex-start, wrap);}
+.uploadPhoto{ margin: 20px auto 0 auto;}
+.dtlBtn{ margin-top: 0px; margin-left: 8px; color: $primaryBase; font-weight: 600; height: 36px; padding: 0 20px; border-radius: 8px;}
+.dtlBtn:hover{ background: $primaryBase; color: $white;}
+
+.groupUpload{ @include display(flex, flex-start, flex-start)}
+
+
+// .roundedImage{ position: relative;}
+// .roundedImage [attr-data="usp"]{ border-radius: 50%; width: 112px; height: 112px; padding: 0px; overflow: hidden;}
+// .roundedImage .uploadSimpleDvAct{ border: 0px;}
+// .roundedImage label{ margin-bottom: 120px;}
+// .roundedImage aside{ @include position(absolute, 0, unset, unset, 0)}
+

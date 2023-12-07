@@ -1,0 +1,7 @@
+@import '../../../styles/scssGlobal/global.scss';
+.logisticCntr{ width: 100%; @include display(flex, flex-start, space-between, wrap, column) }
+.logisticCntrRight{ width: 100%; padding-right: 48px; padding-top: 48px; padding-left: 110px; flex: 1; }
+.footerSecDiv{ width: 100%; padding: 25px 0 0 0; height: 25px; margin-top: auto}
+.logisticCntr.justify{ @include display(flex, stretch, space-between, wrap, column)}
+.logisticCntrRight.justify{@include display(flex, stretch, space-between, wrap); flex: 1;}
+.logisticCntr.justify [data-attr="footerSecDiv"]{ display: none}

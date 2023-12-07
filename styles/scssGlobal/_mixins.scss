@@ -1,0 +1,91 @@
+// to generate font family variants
+@mixin font($style) {
+  font-family: $style;
+  src: url("../assets/fonts/metropolis/#{$style}.otf") format("opentype");
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-display: swap !important;
+}
+
+@mixin name($name, $height, $size) {
+  font-family: $name;
+  line-height: $line-height-base * $height;
+  font-size: $font-size-base * $size;
+}
+
+// to generate display property
+
+// @mixin display($display, $alignItems: unset, $justifyContent: unset) {
+//   display: $display;
+//   @if $display == flex {
+//     align-items: $alignItems;
+//     justify-content: $justifyContent;
+//   }
+// }
+
+@mixin display($display, $alignItems: unset, $justifyContent: unset, $flexWrap: unset, $flexDirection: unset ) {
+  display: $display;
+  
+  @if $display == flex {
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-wrap: $flexWrap;
+    flex-direction: $flexDirection;
+  }
+  
+  @else if $display == inline-flex {
+    display: $display;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+  }
+}
+
+@mixin position($position, $left: unset, $top: unset,  $right: unset,  $bottom: unset, $margin: unset ) {
+  position: $position;
+
+  @if $position == absolute {
+     left: $left;
+     top: $top;
+     right: $right;
+     bottom: $bottom;
+     margin: $margin
+  }
+
+  @else if $position == fixed {
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+ }
+}
+
+
+// to generate responsivness property
+//small devices
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

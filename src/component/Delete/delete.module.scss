@@ -1,0 +1,8 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.deleteBox{ width: 100%;  }
+.deleteBox h2{ font-weight: 500 }
+.deleteBox h3{ font-size: 16px; font-weight: 400; }
+.deleteBox aside{ @include display(flex) }
+.deleteBox button{ margin-right: 15px; }
+

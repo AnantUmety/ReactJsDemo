@@ -1,0 +1,16 @@
+
+@import '../../../styles/scssGlobal/global.scss';
+.tabList{ width: 100%; border-bottom: 1px solid $white02; @include display(flex, center); flex-wrap: wrap; margin: 0 0 20px 0;}
+.tabList ul{ width: auto; @include display(flex, center, unset, wrap); @include position(position); z-index: 1;}
+.tabList ul li{ padding:  0 4px 0 0;}
+.tabList ul li button{ width: 100%; font-size: 16px; color: $white05; padding: 8px; position: relative;}
+.tabList ul li button.active{ color: $white;}
+.tabList ul li button::after{ content: ""; height: 3px; width: 0%; transition: $transition5; @include position(absolute, 50%, unset, unset,0); background: $primaryBase;}
+.tabList ul li button.active::after{ width: 100%; left: 0px; }
+.tabList ul li button:hover{width: 100%; left: 0px;}
+.tabContainers{ width: 100%; }
+
+.blackList ul li button{ color: $black80; font-weight: 400; }
+.tabList ul li button.active{ color: $primaryBase;}
+.tabList ul li button:hover{ color: $primaryBase;}
+.tabList ul li button:hover:after{ background: $primaryBase; width: 100%; left: 0px;}

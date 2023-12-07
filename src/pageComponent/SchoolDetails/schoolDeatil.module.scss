@@ -1,0 +1,122 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.schoolDetailsLeft{ width: calc(100% - 468px);}
+.schoolDetailsRight{ width: calc(420px + 48px); border-left: 1px solid $blackBase14; margin: -48px -48px 0 0; padding: 48px 0px 24px 0px;}
+.schoolDetailsRight ul{@include display(flex, stretch, space-between, wrap); width: 100%;  padding: 0 0 0px 0px; margin: 0 0 0px 0; }
+.schoolDetailsRight ul li{ width: 100%; padding: 0px 0 16px 0 }
+.schoolDetailsRight ul li b{@include display(inline-flex, stretch, space-between, wrap); width: 160px; font-weight: 600;}
+.schoolDetailsRight ul li:last-child{ padding-bottom: 0px;}
+.schoolDetailsRight h2{ padding: 0 0 20px 0px;}
+.schoolDetailsCenter{ width: 100%; @include display(flex, stretch, space-between, wrap); }
+
+.scDetImg{@include display(flex, center, flex-start, wrap); padding: 0 0px 30px 0;}
+.scDetImg label{ width: 120px; @include display(flex, center, flex-start, wrap); margin: 0 20px 0 0; background: $primaryBase; border-radius: 12px; }
+.scDetImg h4{ font-size: 24px; line-height: 28px; padding: 0px; flex: 1; }
+.scDetImg h4 span{ display: block; font-weight: 400; font-size: 16px;}
+.scDetImg h4 b{ @include display(inline-flex, center, center); background: $blackBase6; font-size: 16px; color: $white; font-weight: 400; height: 24px; border-radius: 30px; padding: 0 10px; margin-top: 3px}
+.scDetImg h4 i{ @include display(block); font-style: normal; margin-top: 7px;}
+
+.platformCntr{ width: 100%; border: 1px solid $blackBase14; margin: 0 0 24px 0; border-radius: 12px; padding: 24px; @include display(flex, flex-start, space-between, wrap); }
+.platformCntr h4{ font-weight: 600; width: 100%; margin-bottom: 10px; @include display(flex, center, unset, wrap); }
+.platformCntr ul{@include display(flex, stretch, space-between, wrap); width:46%; padding: 0 0 10px 0px; margin: 0 0 0px 0; }
+.platformCntr ul li{ width: 100%; padding: 0px 0 16px 0; @include display(flex, stretch, space-between, wrap); }
+.platformCntr ul li b{@include display(inline-flex, stretch, space-between, wrap); width: auto; font-weight: 600}
+.platformCntr h4 cite{@include display(inline-flex, stretch, space-between, wrap); background: $primaryBase1; width: 16px; height: 16px; border-radius: 4px; margin: 0 16px 0 10px;}
+
+.platformCntr .grayBtn cite{ background: $blackBase5; }
+
+.textClass{ height: 180px; background: $blackBase15; border-radius: 12px; margin-bottom: 52px;}
+.textClass [data-attr="labelGroup"]{ height: 100%;}
+.textClass main{ height: 100%;}
+.textClass [data-attr="labelGroup"] textarea{ background: none; height: 100%; color: $black80; border: 0px;}
+.leaveCommentDiv{ @include display(flex, center, flex-start, wrap, column)}
+.leaveCommentDiv label{ margin-bottom: 32px;}
+.leaveCommentDiv h3{ font-size: 20px; padding-bottom: 28px;}
+.textClass [data-attr="labelGroup"] textarea::placeholder { color: $black80; opacity: 0.4;  }
+
+.pdfDownload{ width:fit-content; @include display(flex, flex-start, flex-start); font-size: 14px; @include position(relative); padding: 0 0 0 46px; transition: $transition5}
+.pdfDownload span b{ @include display(block); color: $blackBase7; font-weight: 400; font-size: 10px;}
+.pdfDownload img{ @include position(absolute, 0, 0)}
+.pdfDownload:hover{ margin-left: 5px;}
+
+.schoolDetailsRight section{ width: 100%; padding-left: 24px; padding-bottom: 36px; margin-bottom: 35px; border-bottom: 1px solid $blackBase14;}
+.schoolDetailsRight section:last-child{ border: 0px;}
+
+.showCartDiv{ width: 100%; margin-bottom: 20px;}
+.showCartDiv ul{ width: 100%; @include display(flex, flex-start, flex-start); padding-left: 70px;}
+.showCartDiv ul li{ flex: 1; font-size: 14px; text-align: center;}
+.showCartDiv ul li:first-child{ font-weight: 600;}
+.showCartDiv ul li:last-child{ font-weight: 600;}
+.showCartDiv .selectID{ width: 230px; margin-left: auto;}
+.showCartDiv aside{ width: 100%; @include display(flex, center, space-between, wrap); @include position(relative); bottom: -30px; z-index: 1; margin-top: -15px; padding-top: 0px;}
+.showCartDiv aside h2{ padding: 0px;}
+.showCartDiv [class="apexcharts-toolbar"]{@include position(absolute, unset, 56px!important, -20px!important )}
+
+.licInf{ margin-top: 20px;}
+.licInf h2{ font-size: 20px; font-weight: 500; }
+
+.manageDropDown{ width: 190px; position: relative; margin-left: 20px; }
+.manageDropDown .dDown{ background: $primaryBase; width: 100%; height: 36px; border-radius: 8px; position: relative; }
+.manageDropDown .dDown em{ display: block; width: 36px; height: 36px; background: $primaryBase1; @include position(absolute, unset, 0, 0); border-radius: 0 8px 8px 0; color: $white; @include display(flex, center, center); font-size: 25px; }
+.manageDropDown .dDown span{ color: $white; font-size: 14px; @include display(flex, center, flex-start); padding: 0 36px 0 15px;}
+.manageDropDown .dDown.isDropDownOpen{ border-radius: 8px 8px 0 0px;}
+.manageDropDown .dDown.isDropDownOpen em{ border-bottom-right-radius: 0px;}
+.manageDropDown ol{ width: 100%;  background: $primaryBase6; @include position(absolute, 0, 36px); overflow: hidden; border-radius: 0 0 8px 8px;}
+.manageDropDown ol li{ width: 100%; padding: 0px; border-bottom: 1px solid $primaryBase1; }
+.manageDropDown ol li button{ width: 100%; text-align: left; padding: 5px 10px; font-size: 14px; color: $white; }
+.manageDropDown ol li button:hover{ background: $primaryBase1;}
+
+.ststusBtn{font-size: 12px; line-height: 21px; border-radius: 24px; height: 22px; color: $white; padding: 0 15px 0px 15px; margin: 0 10px 0 5px;}
+.Active{ background: $secondryBase;  }
+.Pending{ background: $yellowBase; }
+.Approved{ background: $greenBase2;  }
+.Inactive{ background: $blackBase8;  }
+
+.schoolDetailTabs{ width: 100%; padding-top: 60px;}
+.addedit{ font-size: 25px; }
+.schoolDetailTabs {}
+
+.customeTableDetails table{ display: block; width: 100%; margin-bottom: 20px; }
+.customeTableDetails table thead{ width: 100%; display: flex; flex-wrap: wrap; }
+.customeTableDetails table thead tr{ width: 100%; display: flex; flex-wrap: wrap; }
+.customeTableDetails table thead tr th{ flex: 1; display: flex; align-items: center;}
+.customeTableDetails table thead tr th:last-child{ max-width: 70px; }
+
+.customeTableDetails table tbody{ width: 100%; display: flex; flex-wrap: wrap; }
+.customeTableDetails table tbody tr{ width: 100%; display: flex; flex-wrap: wrap; position: relative; padding-right: 70px; border-bottom: 1px solid $blackBase18; background: $blackBase19; }
+.customeTableDetails table tbody tr td{ flex: 1; border: 0px;}
+.customeTableDetails table tbody tr td:last-child { width: 100%; min-width: 100%; padding: 0px; }
+.customeTableDetails table tbody tr td .addedit{ position: absolute; right: 20px; top:10px;}
+.customeTableDetails table tbody tr td p{ padding-bottom: 0px;}
+.customeTableDetails .platformCntr{ width: calc(100% + 70px); border-radius: 4px; background: $white; margin: 0px; border: 0px; border-right:5px solid $blackBase19;  border-left:5px solid $blackBase19; border-bottom:5px solid $blackBase19; padding-left: 10px;}
+.customeTableDetails .platformCntr ul{ position: relative; }
+.customeTableDetails .platformCntr ul li b{ font-weight: 500;}
+// .customeTableDetails .platformCntr ul::after{ content: ""; position: absolute; right: 50%; height: 100%; border: 1px solid #ddd;}
+
+.customTableAdmin{ width: 100%; margin-bottom: 20px; }
+.customTableAdmin p{ padding: 0px 0 0 18px; position: relative; display: inline-flex; align-items: center; flex-direction: row-reverse; }
+.customTableAdmin p svg{ color: $primaryBase; margin-right: 7px; font-size: 18px; margin-left: -25px; }
+.customTableAdmin th:last-child{ width: 70px;}
+.deleteHand{ font-size: 20px; cursor: pointer; }
+
+.addAdmin{ margin-left: auto; margin-right: 10px;}
+
+.aboutSchoolDv{ position: relative; }
+.aboutSchl{ @include position(absolute, unset, 0, 10px); cursor: pointer; }
+.addAdmForm{ width: 100%; }
+.isPrimary{ margin-top: 18px; font-size: 14px; color: $black05; }
+
+.toolTip{ @include position(absolute, 15px, unset, unset, -33px); min-width: 150px; width: max-content; margin-top: 15px; background: $white; border-radius: 6px; box-shadow: 0 1px 3px $black83; } 
+.toolTip label{ margin: 0px;}
+.toolTip::before{ content: ""; @include position(absolute, 10px, -6px); width: 15px; height: 15px; box-shadow: 0 1px 3px $black83; background: $white; transform: rotate(45deg); }
+.toolTip section{ width: 100%; z-index: 1; position: relative; padding: 7px;  background: $white; border-radius: 6px; }
+.tipPosition{ position: relative; }
+.toolTip section label{ width: 100%; font-size: 12px; padding-left: 0px; padding-right: 25px; }
+.toolTip section label span{ left: inherit; right: 0px;}
+
+.colors1, .colors0, .colors{ font-size: 13px; position: relative; padding: 0 0 0 15px;}
+.colors1:after, .colors0:after, .colors::after{ content: ""; @include position(absolute, 0, 0, unset, 0, auto); width: 7px; height: 7px; background: #36B37E; border-radius: 50%;}
+.colors0:after{background: #FFAB00;}
+.colors1:after{background: #FF5630; }
+.colors2:after{background: #FFFFFF; }
+.renuLicns{ margin-top: 20px;}

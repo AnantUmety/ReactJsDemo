@@ -1,0 +1,63 @@
+@import '../../../styles/scssGlobal/global.scss';
+.tableDiv{ width: 100%; padding-bottom: 15px; @include display(flex, center, space-between)  }
+.tableFull{ width: 100%; padding: 0px; border-radius: 0 0 4px 4px; position:relative;}
+
+.tableBottom{ width: 100%; padding-top: 10px; @include display(flex, center, space-between, wrap)}
+.tableBottom aside{ color: $blackBase8; font-size: 12px;}
+
+.tableDiv aside{ width: 320px; position: relative;}
+.pageSizeSelect{ margin-left: auto; @include display(flex, center, space-between)}
+.pageSizeSelect select{ width: 82px; }
+.pageSizeSelect label{ margin: 0 10px;  color: $blackBase8; font-size: 12px;}
+.tableDiv aside input{ padding-left: 48px;}
+.tableDiv aside img{ position: absolute; left: 17px; top: 9px;}
+
+.tableFull input {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 0 20px;
+    height: 40px;
+    width: 100%;
+}
+
+.tableFull input::placeholder{
+    color: $blackBase8
+}
+
+.Pending, .Active , .Inactive, .Completed ,.Approved ,.Denied{font-size: 12px; height: 22px; border-radius: 24px; color: $white; padding: 0 10px; cursor: default; }
+.Completed{ background: $greenBase2; }
+.Pending{ background: $yellowBase;}
+.Active{ background: $secondryBase;}
+.Inactive{ background: $blackBase8;}
+.Approved{ background: $greenBase2; }
+.Denied{ background: $red1; }
+
+.tableFull select {border: 1px solid #eee; border-radius: 6px; padding: 0 10px; height: 40px; width: 82px;}
+.tableFull table { width: 100%; font-size: 14px; line-height: 16px; padding-top: 0px; border-right: 0px; border-bottom: 0px; border-collapse: collapse; border-spacing: 0;}
+
+.tableFull table th { text-align: left; font-weight: 500; border:0px; border-spacing: 0px; padding: 10px 0px 10px 16px; height: 48px; background: $blackBase4; font-size: 13px;  color: $white;  @include position(relative); border-right: 1px solid $blackBase7;  text-transform: capitalize }
+.tableFull table th span{ @include position(absolute, unset, 0, 0px); height: 100%; @include display(flex, center, center); padding-right: 16px;  }
+.tableFull table tr th:first-child{ border-radius: 8px 0 0 0;}
+.tableFull table tr th:last-child{ border-radius: 0 8px 0 0; border: 0px;}
+
+.tableFull table td { text-align: left; font-weight: 400; padding: 13px 0px 13px 16px; font-size: 14px; background: $blackBase19; border-bottom: 1px solid $blackBase18; }
+
+.tabBtn{ display: inline-flex; margin-left: 10px;}
+.tabBtn button[disabled]{ opacity: 0.5;}
+
+.actions{ position: relative; width: 10px; }
+.actions ol{ width: 168px; border-radius: 8px; padding:  5px 0;box-shadow: 0 2px 3px #ddd; @include position(absolute, unset, 23px,-4px ); background: $white; z-index: 1;}
+.actions ol li{ width: 100%; padding: 10px 16px; }
+.actions ol li button{ width: 100%; text-align: left; font-size: 14px; color: $blackBase;}
+.actions ol li button:hover{ color: $primaryBase;}
+
+.uploadBtnDv{ margin-left: auto; }
+.rightSearch{ margin-left: auto; width: fit-content; margin-top: -60px;}
+
+.uploadBtnDv button{ border-color: $primaryBase; color: $primaryBase; margin-right: 12px;}
+.pageNotFounds{ width: 100%; background: $blackBase20; padding:  40px 0; @include display(flex, center, center)}
+
+@media screen and (max-width:540px) {
+    .tableBottom, .tableBottom section button{ font-size: 12px;}
+    .tableBottom section button{ padding-left: 5px; padding-right: 5px;}
+}

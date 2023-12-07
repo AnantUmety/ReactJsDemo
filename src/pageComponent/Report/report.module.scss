@@ -1,0 +1,44 @@
+@import '../../../styles/scssGlobal/global.scss';
+.helloStu{ padding: 0px 0 25px 0;}
+.helloStu h3{ font-size: 20px; padding-bottom: 16px }
+.helloStu h3 span{ @include display(block); font-size: 14px; font-weight: 400; opacity: 0.7;  }
+.stuData{ width: calc(100% - 200px ); @include display(flex, flex-start, flex-start); margin: 16px 0 0 0; }
+.stuData li{ width: 25%; padding: 0 0 0 28px; color: #0D0D0D; @include position(relative)}
+.stuData li i{ content: ""; @include position(absolute, 6px, 3px); width: 12px; height: 12px; border-radius: 2px; background: $blackBase14;}
+.stuData li b{  @include display(block); font-size: 20px; line-height: 24px; font-weight: 500;  }
+.learnTop{ margin-top: -40px;}
+.stuData li img{margin: 0 0 -3px 0;}
+
+.spanBgs{ border-radius: 4px; width: 12px; height: 12px; @include display(inline-flex);margin-right: 16px; }
+.ioCland svg{ margin-right: 4px;}
+.linking{ color: $primaryBase; font-size: 13px; }
+.scoreCardDv{ width: 100%;}
+.hgroups{ width: calc(100% + 72px); margin-left: -36px; margin-bottom: 44px; padding-left: 36px; padding-bottom: 16px; padding-right: 36px; border-bottom: 1px solid $blackBase14 ; @include display(flex, flex-end, space-between, wrap)}
+.hgroups h1 span{ @include display(block); font-size: 16px; font-weight: 300;}
+.hgroups h1{ padding: 0px;}
+.hgroups h2{ padding: 0px; font-size: 14px;  @include display(flex);font-weight: 300;}
+.hgroups h2 b{ font-size: 28px; font-weight: 500; margin-left: 5px;}
+
+.polynomialsQuiz{ width: 100%; @include display(flex, flex-start, flex-start, wrap);}
+.polynomialsQuiz section{ @include display(flex, flex-start, flex-start, wrap); width: 966px; padding: 0 24px 60px 0}
+.polynomialsQuiz section aside{ @include display(flex, flex-start, flex-start); width: 100%;}
+.polynomialsQuiz section aside h4{ font-size: 14px; padding: 0px; width: 120px; margin-right: 16px;}
+.polynomialsQuiz section aside li{ padding: 0 8px 8px 0; flex: 1;}
+.polynomialsQuiz section aside li button{ height: 28px; width: 100%; border-radius: 4px;}
+.polynomialsQuiz section aside ul{@include display(flex, flex-start, flex-start); flex: 1;}
+.polynomialsQuiz hgroup{ flex: 1; padding: 0 32px}
+.polynomialsQuiz hgroup h4{ font-size: 14px; font-weight: 400;}
+.polynomialsQuiz hgroup h4 b{ font-size: 28px; font-weight: 500; @include display(block); line-height: 32px}
+
+.olList{ @include display(flex); padding-left: 135px; width: 100%;}
+.olList li{ flex: 1; text-align: center; padding-right: 8px;}
+.questions{@include display(flex);}
+.questions .checkeds svg{ color: $greenBase2;}
+.questions span svg{ color: $red1; font-size: 36px; margin-right: 8px;}
+.questions span{ font-size: 14px; margin-right: 16px;@include display(flex, center, center);}
+.showChartBox{ width: 200px; height: 200px; pointer-events: none; @include position(relative); margin-top: -80px}
+.showChartBox h5{ @include position(absolute, 0, 22px, 0, 0, auto); @include display(flex, center, center, wrap, column); width: 100px; height: 50px; text-align: center; padding: 0px; font-weight: 400; }
+.showChartBox h5 b{ font-weight: 600; display: block; font-size: 28px; font-weight: 500;}
+.showChartBoxUp{ width: 100%; @include display(flex, flex-start, flex-start, wrap); }
+
+.weight600{ font-weight: 600;}

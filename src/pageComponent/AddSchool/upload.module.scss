@@ -1,0 +1,24 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.fileUploadContainer { @include display(flex, flex-start, flex-start); margin: 0 0 16px 0;  }
+.customFileUpload { @include display(flex, center, flex-start);  border: none; cursor: pointer;}
+.customFileUpload input[type="file"] {display: none;}
+.uploadImage{ width: 100%; @include display(flex, center, flex-start); margin: 0 0 24px 0; }
+.uploadSimpleDv {@include display(flex, center, center); border: 2px dashed $blackBase14; width: 120px; height: 120px; border-radius: 12px; margin-right: 19px;}
+.fileUploadContainer aside h5{ color: $blackBase8; font-size: 12px; margin: 0px; padding: 0px; }
+
+.fileUploadContainer aside span{ border: 1px solid $primaryBase; background: none; color: $secondryBase; height: 36px; border-radius: 8px; margin: 0 0 10px 0; font-weight: 600; padding: 0 20px; height: 36px; @include display(flex, center, center);}
+.fileUploadContainer aside span:hover{ background: $primaryBase; color: $white;}
+  
+.cropImageDiv{ width: 100%; @include display(flex, center, flex-start, wrap);}
+.uploadPhoto{ margin: 20px auto 0 auto;}
+.deleteBtn{ margin-top: 27px; margin-left: 8px;}
+.uploadSimpleDvAct{ background: $blackBase14; padding: 10px; pointer-events: none;}
+.uploadSimpleDvAct img{ max-height: 100%;}
+
+.roundedImage{ position: relative;}
+.roundedImage [attr-data="usp"]{ border-radius: 50%; width: 112px; height: 112px; padding: 0px; overflow: hidden;}
+.roundedImage .uploadSimpleDvAct{ border: 0px;}
+.roundedImage label{ margin-bottom: 120px;}
+.roundedImage aside{ @include position(absolute, 0, unset, unset, 0)}
+

@@ -1,0 +1,26 @@
+@import '../../../styles/scssGlobal/global.scss';
+.partnerStatusDv{}
+.addPartDv{ margin-bottom: 25px; }
+.Pending, .Completed{font-size: 12px; height: 22px; border-radius: 24px; color: $white; padding: 0 10px; }
+.Completed{ background: $greenBase2; }
+.Pending{ background: $yellowBase;}
+.peraLnk{ padding: 0px; font-size: 13px;}
+.peraLnk a{ @include display(inline-flex, center, center); font-weight: 400;}
+.peraLnk a b{ font-weight: 400;}
+.peraLnk a img{ margin-left: 3px;}
+.colors1, .colors0, .colors{ font-size: 13px; position: relative; padding: 0 0 0 15px;}
+.colors1:after, .colors0:after, .colors::after{ content: ""; @include position(absolute, 0, 0, unset, 0, auto); width: 7px; height: 7px; background: #36B37E; border-radius: 50%;}
+.colors0:after{background: #FFAB00;}
+.colors1:after{background: #FF5630; }
+.colors2:after{background: #FFFFFF; }
+
+
+.filterListing{ @include display(flex, flex-start, space-between, wrap); margin: 0 0 20px 0; padding-top: 60px;}
+.filterListing hgroup{ @include display(flex)}
+.filterListing hgroup > div{ margin-right: 12px;}
+.filterListing hgroup:last-child > div{ margin-left: 12px; margin-right: 0px;}
+.filterListing h3{ font-size: 20px; width: 100%; padding: 0px 0 20px 0;}
+.SchoolStatusDv .schoolClasses{ width: 100%; padding-top: 0px; position: relative; }
+.SchoolStatusDv .schoolClasses [data-attr="tableDiv"]{ position: absolute; left: 0px; top:-161px; }
+
+.iconReverse button b img{ transform: rotate(180deg);}

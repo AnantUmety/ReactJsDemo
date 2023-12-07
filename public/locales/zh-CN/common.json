@@ -1,0 +1,31 @@
+{
+    "common": {
+      "continue": "Continue"
+    },
+    "error": {
+      "usernameRequired": "Username is required",
+      "passwordRequired": "Password is required"
+    },
+    "header": {
+      "browseLibrary": "Browse library"
+    },
+    "login": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use",
+      "and": "and",
+      "confirmYouRead": "By continuing, you're confirming that you've read our",
+      "dontHaveAccount": "Don’t have an account?",
+      "enterYourSchool": "Enter your school",
+      "orLogin": "or Login with",
+      "schoolLogin": "Demo Login",
+      "partnerLogin": "Partner Login",
+      "username":"Username",
+      "password":"Password",
+      "rememberMe": "Remember me",
+      "forgotText": "Forgot password"
+    },
+    "signup": {
+      "signup": "Signup"
+    }
+  }
+  

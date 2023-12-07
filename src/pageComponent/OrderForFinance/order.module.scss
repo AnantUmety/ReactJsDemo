@@ -1,0 +1,21 @@
+@import '../../../styles/scssGlobal/global.scss';
+.ordrDiv{ width: 100%; }
+.helloOrder{ width: 100%;}
+.orderLink{ color: $primaryBase; text-decoration: none;}
+
+.Pending, .pending{ background: $yellowBase; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.Approved, .approved{ background: $greenBase2; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.Active, .active{ background: $secondryBase; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.commented{ @include display(inline-flex); margin: 0px 0 0 10px; vertical-align: -4px;}
+
+.approveMain{}
+.approvBoxs{ width: 100%; }
+.approvBoxs button{ margin-top: 10px; }
+.approveMain svg{ font-size: 22px; cursor: pointer;}
+.checkLists{ width: 100%;}
+.checkLists p{ padding: 0px 0 5px 0;}
+.checkLists aside{ width: 100%; display: flex; align-items: center; justify-content: flex-start; padding: 0 0 20px 0;}
+.checkLists aside button{ position: relative; padding: 0 0 0 23px; margin-right: 15px;}
+.checkLists aside button b{ width: 17px; height: 17px; border: 2px solid #999; border-radius: 50%; position: absolute; left: 0px; top:1px;}
+.checkLists aside button b::after{ content: ""; position: absolute; left: 0px; top:0px; right: 0px; bottom: 0px; margin: auto; border-radius: 50%; background:#075DF6; width: 8px; height: 8px; display: none;  }
+.checkLists aside button.actives b::after{ display: block;}

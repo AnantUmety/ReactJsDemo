@@ -1,0 +1,95 @@
+
+@import '../../../styles/scssGlobal/global.scss';
+.addPartner{ width: 85%; }
+.addParts{ box-shadow: none!important; border-bottom: 1px solid $blackBase14; margin-bottom: 20px; padding-top: 20px; }
+.addParts h4{ font-weight: 600; }
+.addParts h4 span{ display: block; font-weight: 300; opacity: 0.7; font-size: 14px}
+.addMores{ @include display(flex, center, center); color: $primaryBase; margin-top: 20px }
+.addMores b{ @include display(flex, center, center); margin: 0 10px 0 0;}
+.addMores b span{ font-weight: 600; }
+.addParts:last-child{ border: 0px;}
+.radioList [role="radiogroup"]{ @include display(flex)}
+.radioList [role="radiogroup"] > span {color: $black80;}
+.radioList label span.Mui-checked:first-child { color: red;}
+.addressDetail{ display: block; font-size: 16px; line-height: 22px; font-weight:300; width: 320px; text-transform: capitalize;}
+  
+.radioButtons{ width: 100%; @include display(flex, center, flex-start, wrap); padding: 0 0 16px 0 ; }
+.radioButtons cite{ margin-right: 20px;}
+.radioButtons label{ margin-bottom: 10px; margin-right: 20px;}
+.radioButtonsFull label{ width: 100%;}
+.radioButtonsFull aside{ width: 100%; }
+
+.fileUploadContainer {display: flex; flex-direction: column;align-items: center; justify-content: center; margin:0px; padding: 0px; border: 2px dashed $blackBase14; border-radius: 8px; cursor: pointer; }
+.fileUploadContainer label{ width: 100%; height: 100%; margin: 0px; display: flex; flex-direction: column; align-items: center; padding: 40px 20px;}
+.fileUploadLabel {font-size: 18px; margin-bottom: 10px; cursor: pointer;}
+.pdfUpload {display: none; /* Hide the default file input appearance */}
+// .uploadButton { background-color: #007bff; color: white;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;  transition: background-color 0.3s ease; }
+// .uploadButton:hover { background-color: #0056b3; }
+  
+.fileUploadContainer p{ padding: 0px; font-size: 12px; color: $blackBase8; text-align: center;}
+.fileUploadContainer p span{ display: block;}
+.fileUploadContainer p b{ font-weight: 400; color: $primaryBase;}
+.fileUploadContainer label img{ margin-bottom: 6px;}
+
+.pdfbox{ border: 1px solid $blackBase14; background: $blackBase20; margin-top: 24px; border-radius: 8px; padding: 24px; @include position(relative) }
+.pdfbox {@include display(flex, center, flex-start, wrap) }
+.pdfbox h3{ padding: 0px; font-size: 16px; padding-left: 0px; @include display(flex, center, flex-start); width: 100%; padding-right: 30px;}
+.pdfbox h3 img{ margin-right: 6px;}
+.pdfbox button{ @include position(absolute,unset, 24px, 21px)}
+.pdfbox h6{ @include display(flex, center, flex-start); width: 100%; padding: 10px 0 0 0; }
+.pdfbox h6 b{ color : $primaryBase; width: 36px;}
+.pdfbox h6 span{ flex: 1; background: $blackBase13; @include display(flex, center, flex-start); height: 6px; border-radius: 32px; margin: 0px 0 0 0; overflow: hidden; position: relative; }
+.pdfbox h6 span em{ width: 50%; height: 100%; @include position(absolute, 0px, 0px); background: $primaryBase;}
+.saveClasses{ margin-top: 48px; }
+
+.switchClass{ width: 100%;  @include display(flex, center, flex-start, wrap);  }
+.switchClass li{ @include display(flex, center, flex-start); width: 100%; font-size: 16px; font-weight: 300;}
+.switchClass li span{ flex: 1;}
+.checkboxHeading{ font-size: 20px; font-weight: 500; margin-bottom: 20px; }
+.logVia{ margin-bottom: 24px;}
+
+
+// .addPartsListLoops{ margin-left: 33.33%!important;}
+.personBtn{ @include display(flex, flex-start, space-between)}
+.personBtn .addMores{ margin-top: 0px; color: $blackBase5; font-size: 12px; @include display(flex, center, center); text-decoration: underline;}
+.personBtn{ font-size: 16px; font-weight: 600;}
+.personBtn .addMores span{ @include display(flex, center, center); }
+.personBtn .addMores img{ margin-left: 4px;}
+.personBtn .addMores:hover{ color: $primaryBase; text-decoration: none;}
+.addPartsShift{ padding-left: 33.33%!important; position: relative;}
+.addPartsLists{ @include position(absolute, 0, 20px); width: 33%;}
+.addPartsListLoop{ padding-bottom: 30px;}
+
+.positionDiv{ position: relative;}
+.positionDiv h6{ @include position(absolute, 21px, 18px); z-index: 1; font-size: 16px; font-weight: 400;}
+.positionRightBtn{ @include position(absolute, unset, 11px, 7px); z-index: 1; padding: 5px;}
+.isforgot [data-attr="whiteBox"]{ padding: 0px;}
+.isforgot{ width: 100%!important;}
+
+
+.addParListSecon{ padding-bottom: 24px;}
+.addPartsList ul li{ padding-bottom: 24px;}
+
+.saveLicance{ margin-left: 33.3%;}
+.checkboxHeadingWdth{ width: 33%; }
+.saveLicanceTwo{ margin-left: 33.3%; position: relative; top:-40px}
+
+
+.platformCntr{ width: 100%; border: 1px solid $blackBase14; margin: 0 0 24px 0; border-radius: 12px; padding: 24px; @include display(flex, flex-start, space-between, wrap); }
+.platformCntr h4{ font-weight: 600; width: 100%; margin-bottom: 10px; @include display(flex, center, unset, wrap); }
+.platformCntr ul{@include display(flex, stretch, space-between, wrap); width:46%; padding: 0 0 10px 0px; margin: 0 0 0px 0; }
+.platformCntr ul li{ width: 100%; padding: 0px 0 16px 0; @include display(flex, stretch, space-between, wrap); }
+.platformCntr ul li b{@include display(inline-flex, stretch, space-between, wrap); width: auto; font-weight: 600}
+.platformCntr h4 cite{@include display(inline-flex, stretch, space-between, wrap); background: $primaryBase1; width: 16px; height: 16px; border-radius: 4px; margin: 0 16px 0 10px;}
+
+
+.supportedLists{ width: 100%; }
+.supportedLists h4{ font-weight: 500; }
+.supportedLists section h4{ margin-bottom: 0px; padding-bottom: 10px;}
+.supportedLists section a{ align-items: center; margin-bottom: 20px; }
+.supportedLists section a span b{ font-weight: 400; }
+.supportedLists section a span{ margin-left: 10px;}
+
+.selectSchoolBox{ margin-bottom: 30px;}
+.supportedDocuments{ margin-bottom: 25px;}
+.saveClassesBtn{ margin-left: 33%;}

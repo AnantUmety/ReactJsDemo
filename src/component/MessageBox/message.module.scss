@@ -1,0 +1,15 @@
+@import '../../../styles/scssGlobal/global.scss';
+.errorBox{ font-style: normal; display: block; width: 100%; font-size: 12px; line-height: 16px; font-weight: 400; color: $red; padding: 5px 0 0 0;}
+.successBox{font-style: normal; display: block; width: auto; font-size: 16px; line-height: 20px;font-weight: 600; color: $success; padding: 10px 0 0 0;}
+.successBox i{ font-style: normal;}
+.errorBox b, .successBox b{ width: 24px; vertical-align: -3px; display: inline-flex; align-items: center; justify-content: center; margin-right: 5px;}
+
+.backgroundRed{ background: $red; border-radius: 6px; color: $white; height: 52px; position: relative; padding: 0 0 0 48px; @include display(flex, center, flex-start); opacity: 1; transition: $transition4; overflow: hidden; }
+.backgroundRed em{@include position(absolute, 16px, 16px); }
+.backgroundRed.fadeOut{ opacity: 0; width: 0px; height: 0px;  transition: $transition4; }
+
+[dir="rtl"] .backgroundRed{ padding-left: 10px; padding-right: 48px; }
+[dir="rtl"] .backgroundRed em{ left: initial; right: 16px; }
+
+.right{ text-align: right;}
+.center{ text-align: center;}

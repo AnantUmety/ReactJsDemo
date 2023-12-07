@@ -1,0 +1,7 @@
+@import '../../../styles/scssGlobal/global.scss';
+.partnerStatusDv{ width: 100%; }
+.addPartDv{ margin-bottom: 25px; }
+.Pending, .Completed{font-size: 12px; height: 22px; border-radius: 24px; color: $white; padding: 0 10px; }
+.Completed{ background: $greenBase2; }
+.Pending{ background: $yellowBase;}
+.linkColor{ color: $primaryBase;}

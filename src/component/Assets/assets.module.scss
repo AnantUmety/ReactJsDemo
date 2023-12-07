@@ -1,0 +1,114 @@
+
+@import '../../../styles/scssGlobal/global.scss';
+
+.logoCntr{ width: auto; }
+.browseLibraryCntr{ width: auto; transition: $transition5;}
+.browseLibraryCntr a{ left: 0; @include display(inline-flex, center);font-size: 1.125rem; font-weight: 600; transition: $transition5; color: $white; position: relative; }
+.browseLibraryCntr b{ width: 3rem; height: 3rem; @include display(inline-flex, center, center); border: 1px solid $white02; border-radius: 50%; margin: 0 0 0 0.75rem;  transition: $transition5; }
+.browseLibraryCntr a:hover{ left: 5px; transition: $transition5;}
+.browseLibraryCntr a:hover b{ border-color: $white;}
+
+/*****buttonlink css start******/
+.buttonlink{ color: $primaryBase; font-size: 1rem; font-weight: 500; margin-top: 0.75rem; transition: $transition5; }
+.buttonlink.full{ width: 100%; text-align: left; }
+.buttonlink:hover{ margin-right: -3px;}
+.buttonCls{ padding: 9px 20px; background: $white02; border-radius: 30px; color: $white; margin-right: 10px; margin-bottom: 10px;}
+.buttonCls:hover{ margin-right: 10px; transform: scale(1.05)}
+.buttonlink.disable{ opacity: 0.3; pointer-events: none}
+.pointerNoneBlink{ cursor: default}
+.pointerNoneBlink:hover{ transform: scale(1)}
+/*****buttonlink css end******/
+
+/*****checkbox css start******/
+.checkGlb { @include display(flex, center, center); flex-wrap: wrap; margin-top: 0.75rem;}
+.full{ width: 100%;}
+.checkGlb input[type="checkbox"] {display: none;}
+.checkGlb .checkboxDesign { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 0.25rem; position: relative; border: 1px solid $white02; background: rgba(0, 0, 0, 0.1); cursor: pointer; }
+.checkGlb input[type="checkbox"]:checked ~ .checkboxDesign::after {content: ""; display: block; @include position(absolute, 50%, 50%); transform: translate(-50%, -50%); width: 50%; height: 50%;background-color: $white; border-color: $white; 
+background-position: center center; background-repeat: no-repeat; border-radius: 2px; }
+.checkGlb em {font-size: 1rem; line-height: 1.25rem;width: auto; cursor: pointer; font-style: normal; color: $white06;}
+.isTitle .checkboxDesign{ margin-right: 10px;}
+.isDisable{ opacity: 0.5; pointer-events: none;}
+.isTitle em{ width: auto;}
+.alignLeft{ display: flex; flex-wrap: wrap; align-items: flex-start; flex-direction: row-reverse;}
+.alignLeft .checkboxDesign{ margin-right: 0px; margin-left: 10px;}
+/*****checkbox css end******/
+
+/*****parentBox css start******/
+.parentBox{ width: 100%; @include display(flex, center, space-between); flex-wrap: wrap;}
+.parentBox.left{ @include display(flex, center, flex-start);} 
+.parentBox.right{ @include display(flex, center, flex-end);} 
+.parentBox.center{ @include display(flex, center, center, wrap, column);} 
+/*****parentBox css end******/
+
+/*****languages css start******/
+.languagesCntr{ width: auto; margin-right: 1.8rem; /*18.438rem*/; position: relative; margin-left: auto; }
+.buttonCntr{ width: 9.625rem; height: 48px; border-radius: 0.75rem; border: 1px solid $white05; color: $white; font-size: 1.125rem; @include display(flex, center); padding: 0 2.125rem 0 1.5rem; position: relative;}
+.buttonCntr em{ background: url("../../../public/images/down.png") no-repeat left top; width: 12px; height: 12px; @include position(absolute); right: 15px;}
+.buttonCntr.active em{ transform: rotate(180deg);}
+.buttonCntr img {margin-right: 0.5rem}
+
+.languagesCntr ul{ width: 18.438rem; top: 40px;border: 1px solid $white05; background: $black05; padding: 0.75rem 1.125rem; border-radius: 0.75rem; height: 135px; overflow: auto; @include position(absolute, 0, 54px) }
+.languagesCntr ul li{ width: 100%; padding-bottom: 0.2rem;}
+.languagesCntr ul li button{ padding: 1rem; color: $white; width: 100%; border-radius: 0.75rem; text-align: left;}
+.languagesCntr ul li button.active{ background: $white01;}
+/*****parentBox css start******/
+
+/*****videoPlayerDiv css start******/
+.videoPlayerDiv{ width: 100%; position: relative;}
+.videoPlayerDiv video{ width: 100%; }
+.absoluteVideo{ position: absolute; top: 0px; left: 0px;}
+/*****videoPlayerDiv css end******/
+
+
+/*****Navigation css start******/
+
+
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+/*****Navigation css end******/
+
+/*****Useheading css start******/
+.titleCntr{ width: 100%; padding-bottom: 3rem; }
+.titleCntrIn{ width: 100%; }
+.titleCntrHead{ width: 100%; @include display(flex, center, space-between); flex-wrap: wrap; padding-right: 3rem; }
+.titleCntrHead a{ font-size: 1rem; }
+/*****Useheading css end******/
+
+/******SkipButton css start*****************/
+.skipButtonCntr{ width: auto; @include display(flex, center, center); transition: $transition5; padding: 0 58px 0 0; position: relative; min-height: 48px;}
+.skipButtonCntr b{ color: #fff; font-weight: 600; }
+.skipButtonCntr span{ font-size: 35px; width: 48px; height: 48px; border: 1px solid $white02; border-radius: 50%;  @include display(flex, center, center); color: #fff; margin: 0 0 0 12px;  position: relative; overflow: hidden; @include position(absolute, 0, 0, 0, 0) } 
+.skipButtonCntr span::after{ content: ""; background: $white02; width: 0px; height: 0px; @include position(absolute, 50%, 50%);transition: $transition5; border-radius: 50%; }
+.skipButtonCntr:hover span::after{ width: 100%; height: 100%;  @include position(absolute, 0%, 0%); transition: $transition5;}
+/******SkipButton css end*****************/
+
+
+
+/******backtotop css start*****************/
+.backtop{ position: fixed; bottom: 15px; right: 8px; font-size: 25px; color: #f1556c; background: none; display: none;}
+.visible{ display: block;}
+/******backtotop css end*****************/
+
+
+
+
+
+
+/*********responsive work start***********/
+@media screen and (max-width:1200px) {
+.logoCntr img{ width: 111px;}
+
+}
+
+@media screen and (max-width:900px) {
+    .logoCntr{ margin: auto;}
+}
+/*********responsive work end***********/

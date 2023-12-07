@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 0px;
+}
+::after, ::before{ box-sizing: border-box;}
+
+html,
+body { 
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size:14px;
+  line-height:18px;
+  font-family: 'Poppins', sans-serif;
+  color: #091E42;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #0946F1;
+}
+
+form{ width: 100%; }
+
+#__next {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  width: 100%; flex-wrap: wrap;
+}
+
+button{ border: 0px; outline: 0; background: none; cursor: pointer;  font-size:16px; line-height:20px;}
+a {color: #075DF6; text-decoration: none; display: inline-flex;  }
+form{ width: 100%; }
+
+h1{ font-size: 24px; line-height: 30px; font-weight: 500; padding-bottom: 20px;} /*36*/
+h2{ font-size: 20px; line-height: 26px; font-weight: 500; padding-bottom: 20px;} /*28*/
+h3{ font-size: 18px; line-height: 26px; font-weight: 500; padding-bottom: 20px;}  /*24*/
+h4{ font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 20px;} /*20*/
+h5{ font-size: 14px; line-height: 20px; font-weight: 500; padding-bottom: 20px;} /*16*/
+h6{ font-size: 12px; line-height: 18px; font-weight: 500; padding-bottom: 20px;} /*14*/
+
+p{font-size: 14px; line-height: 18px; padding: 0 0 20px 0; color: #42526E; } /*14*/
+li{font-size: 14px;line-height: 18px; padding: 0 0 20px 0;} /*14*/
+img{ max-width: 100%; height: auto;}
+/*************************************************************/
+
+.ulDot{ width: 100%; padding: 0 0 24px 0;}
+.ulDot li{ width: 100%; padding: 0 0 4px 25px; position: relative; color: #42526E; }
+.ulDot li::after{ content: ""; position: absolute; left: 10px; top:7px; width: 4px; height: 4px; background: #42526E; border-radius: 50%;}
+.languagesBox{ width: 100%; display: flex; flex-wrap: wrap;}
+.languagesBox li{ height: 28px; padding: 4px 8px; border-radius: 4px;  margin: 0 4px 4px 0; display: flex; align-items: center; justify-content: center; background:#EBECF0; font-size: 12px; color: #091E42;}
+
+/******placeholder css start******/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ color: rgba(255, 255, 255, 0.4); opacity: 1; /* Firefox */}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: rgba(255, 255, 255, 0.4); }
+::-ms-input-placeholder { /* Microsoft Edge */ color: rgba(255, 255, 255, 0.4);}
+/******placeholder css end******/
+
+/******datepicker calander css start******/
+.custom-datepicker-calendar{ background: red; border: 0px!important; box-shadow: 0 0 10px #ddd; border-radius: 10px;}
+.custom-datepicker-calendar .react-datepicker__header{ background: none; border: 0px; padding: 0 0 10px 0;} 
+.custom-datepicker-calendar .react-datepicker__navigation{ border: 1px solid #ddd; border-radius: 6px; height: 22px; width: 22px; margin-top: 6px;}
+.custom-datepicker-calendar .react-datepicker__navigation span{transform: scale(0.6);}
+.custom-datepicker-calendar .react-datepicker__day-names{ padding-top: 10px;}
+.custom-datepicker-calendar .react-datepicker__day-name{ font-weight: 400; color: #999; }
+.custom-datepicker-calendar .react-datepicker__current-month{ padding-top: 10px; font-weight: 400;}
+.custom-datepicker-calendar .react-datepicker__navigation--next{ margin-right: 5px;}
+.custom-datepicker-calendar .react-datepicker__navigation--previous{ margin-left: 5px;}
+/******datepicker calander css end******/
+
+/* a:focus-visible,
+button:focus-visible, input:focus-visible {
+  outline: 0.1px solid #047EFD; 
+  outline-offset: 1px; 
+  border-radius: 8px;
+}
+
+a:hover, a:active, a:focus, 
+button:hover, button:active, button:focus, input:hover ,  input:active,  input:focus {
+  outline: 0px; 
+} */
+
+.swiper {width: 100%;}
+
+/***********select box start ****************/
+.selectnBoxCustom{ width: 100%; height: 48px;font-size: 16px; border: 1px solid rgba(255, 255, 255, 0.5);  padding: 0px; color: #313034; border-radius: 8px; }
+.selectnBoxCustom option {font-size: 16px; background-color: #fff; color: #444; }
+.selectnBoxCustom > div{ border: 0px; background: none;}
+.selectnBoxCustom > div > div > div{ color: #fff;}
+.selectnBoxCustom .css-t3ipsp-control{ height: 46px; cursor: pointer; }
+.selectnBoxCustom .css-1u9des2-indicatorSeparator{ display: none;}
+.selectnBoxCustom #react-select-3-listbox{ background: #000; margin-top: 1px; }
+.selectnBoxCustom .css-d7l1ni-option{ background: #0D171F; cursor: pointer;}
+.selectnBoxCustom .css-13cymwt-control{ min-height: 45px;}
+.selectnBoxCustom .css-1fdsijx-ValueContainer{ font-weight: 600; padding-left: 15px; }
+/***********select box end ****************/
+
+
+/***********type number hack ****************/
+/* Hide the default number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0; }
+/***********type number hack end****************/
+
+/*******************/
+.halfBox{ display: flex; flex-wrap: wrap;}
+.halfBox li{width: 48%; margin-right: 4%; padding-bottom: 24px; }
+.halfBox li:nth-child(2n){ margin-right: 0px; margin-left: auto;}
+.halfBox li.rightPush{ margin-right: 0px; margin-left: auto;}
+.halfBox li.fullIn{ width: 100%; margin-right: 0px; }
+.halfBox li.marginLeft{ margin-left: 0px; }
+.customeFields{ border: 0px; }
+.customeFields > div::after, .customeFields > div::before{ border: 0px; display: none; }
+.customeFields input{ background: #EBECF0; padding-left: 0px; color: #091E42; }
+.customeFields > div{border-radius: 12px; background: #EBECF0!important; overflow: hidden; padding-left: 20px;}
+.customeFields label{ padding-left: 10px; color: #091E42!important; opacity: 0.4;}
+
+.customeFieldsPassword{ border: 0px; }
+.customeFieldsPassword > div::after, .customeFieldsPassword > div::before{ border: 0px; display: none; }
+.customeFieldsPassword input{ background: #EBECF0; padding-left: 51px; color: #091E42; }
+.customeFieldsPassword > div{border-radius: 12px; background: #EBECF0!important; overflow: hidden; padding-left: 20px;}
+.customeFieldsPassword label{ margin-left: 51px; color: #091E42!important; opacity: 0.4;}
+
+/* .customeSelects{ width: 100%; height: 50px;  background: #EBECF0; border:0px; border-radius: 12px;  } */
+.customeSelects div svg{ font-size: 50px;}
+/* .customeSelects > div { border:0px; height: 100%; background: #EBECF0; border-radius: 12px; } */
+
+/*****************/
+
+
+/********global otp css start********/
+.globalOTP{ width: 100%; justify-content: center;}
+.globalOTP input{ width: 50px!important; height: 50px; border-radius: 12px; border: 0px; background: #EBECF0; margin: 10px 8px 32px 0;}
+/********global otp css end********/
+
+
+.datePicker{ width: 100%; height: 48px; background: #EBECF0; border: 0px; font-size: 14px; padding: 20px 16px 12px 16px; color: #091E42; border-radius: 8px; position: relative; }
+.datePicker::placeholder {color: #ccc; }
+.datePicketCalander{ z-index: 2;}
+.datePicketCalander .react-datepicker__month-container{ background: #fff; border: 0px; width: 230px; }
+.datePicketCalander .react-datepicker__header { background: #fff; border: 0px; border-bottom: 1px solid #ddd;}
+.datePicketCalander{ border: 0px!important; box-shadow: 0 0 6px #ddd; border-radius: 0px!important;}
+.datePicketCalander .react-datepicker__triangle{ display: none;}
+.datePicketCalander .react-datepicker__header__dropdown{ display: flex; justify-content: space-between; padding: 5px 10px 0 10px;}
+.datePicketCalander .react-datepicker__year-dropdown-container, .datePicketCalander .react-datepicker__month-dropdown-container{ border: 1px solid #ddd; margin: 0px; padding:0px 20px 0px 10px; border-radius: 4px;}
+.datePicketCalander .react-datepicker__year-dropdown-container .react-datepicker__year-read-view--down-arrow, .datePicketCalander .react-datepicker__month-dropdown-container .react-datepicker__month-read-view--down-arrow{ top:5px}
+.datePicketCalander .react-datepicker__year-dropdown, .datePicketCalander .react-datepicker__month-dropdown{ background: #fff;}
+.datePicketCalander .react-datepicker__time-box li{ width: 100%!important;}
+.datePicketCalander .react-datepicker__day--selected{ background: #0946F1;}
+.datePicketCalander .react-datepicker__day--keyboard-selected{ background: #091E42; color: #fff;}
+
+
+
+@media screen and (max-width: 900px) {
+   h1{font-size: 1.5rem;}
+}
+
+
+
+
+
+
+
+
+

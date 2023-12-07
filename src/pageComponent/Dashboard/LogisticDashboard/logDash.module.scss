@@ -1,0 +1,24 @@
+@import '../../../../styles/scssGlobal/global.scss';
+.dashboardBox{ width: 100%; } 
+.activityDv section ol{ @include display(flex, flex-start, flex-start, wrap); padding: 10px 0 20px 0;}
+.activityDv section ol li{ width: 49%}
+.activityDv h4, .activityDv section ol li{ font-size: 14px; }
+.activityDv h4 span{ font-size: 28px; @include display(block); margin-top: 8px; }
+.activityDv section ol li span{font-size: 20px; @include display(block); margin-top: 8px;}
+.activityDv h1{ font-size: 28px; }
+.activityDv h1 span{@include display(block); font-size: 16px; font-weight: 400;}
+.activityDv ul{ @include display(flex, flex-start, flex-start, wrap); width: 100%;}
+.activityDv ul li{ width: 100%;  @include display(flex, center, flex-start, wrap); border-bottom: 1px solid $blackBase14; padding: 10px 0; }
+.activityDv ul li b{ width: 114px; @include display(inline-flex); font-weight: 400; }
+.activityDv ul li span{ width: 60px; @include display(inline-flex); font-weight: 600; }
+.activityDv ul li cite{ height: 8px; background: $orange; border-radius: 40px; @include display(flex, center, flex-start, wrap); }
+.activityDv ul li:last-child{ border: 0px; }
+.activityDv ul li:last-child cite{ background: $skyBlue; }
+.activityDv ul li:nth-child(2) cite{ background: $purpleLight; }
+
+.Pending{ background: $yellowBase; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.Approved{ background: $greenBase2; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.Active{ background: $secondryBase; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.Rejected{ background: $red1; height: 22px; padding: 0 15px; border-radius: 30px; font-size: 12px; color: $white; }
+.commented{ @include display(inline-flex); margin: 0px 0 0 10px; vertical-align: -4px;}
+.dashFlex{ @include display(flex)}

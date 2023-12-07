@@ -1,0 +1,12 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.footerCntr{ width: calc(100% - 62px); border-top: 1px solid $blackBase14; margin-left: 62px; margin-right: 0px;
+@include display(flex, center, space-between); padding: 20px 30px 20px 48px; height: 60px }
+.footerCntr ul{ @include display(flex, center); }
+.footerCntr ul li{ padding: 0 30px 0 0; margin-right: 0px; border-right: 0px solid $white02;}
+.footerCntr ul li a{ color: $blackBase10;}
+.footerCntr ul li a:hover{ color: $primaryBase;}
+.footerCntr ul li:last-child{ padding-right: 0px; border: 0px;}
+.footerCntr p{ padding: 0px 24px 0 0; color: $blackBase10; margin-left: auto; }
+
+

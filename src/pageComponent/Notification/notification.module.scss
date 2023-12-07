@@ -1,0 +1,12 @@
+@import '../../../styles/scssGlobal/global.scss';
+
+.notificationBoxUp{ width: 85%; }
+.noticeBox{ background: #F4F5F7; padding: 16px; border-radius: 8px; @include display(flex, center, flex-start, wrap); margin: 0 0 4px 0; }
+.noticeBox label{ width: 36px; height: 36px; @include display(flex, center, center, wrap) }
+.noticeBox hgroup{ flex: 1; margin-left: 8px; @include display(flex, center, flex-start, wrap) }
+.noticeBox hgroup h6 span{ display: block;  color: $blackBase8; font-size: 12px;}
+.noticeBox hgroup h6{color: $blackBase4; padding: 0px; flex: 1;}
+.notificationBox{ width: 100%; padding: 0 0 24px 0; }
+.notificationBox h5{ padding: 0px 0 8px 0;}
+.noticeBoxBg{ background: none;}
+.btnLis{ margin-left: 8px;}
